@@ -1,16 +1,44 @@
 <head>
+  <title>Advising</title>
+  <link rel="stylesheet" type="text/css" href="~seipp1/style/main.css" />
 </head>
 <body>
 
-<form method="post" action="registerAdvisor.php">
-First Name: <input type="text" name="tbFirstName"><br/>
-Last Name:  <input type="text" name="tbLastName"><br/>
-Username:  <input type="text" name="tbUser"><br/>
-Password:  <input type="password" name="password"><br/>
-Email:  <input type="text" name="tbEmail"><br/>
-<button type="submit">Submit</button>
-</form>
-
+  <div id="container">
+    <h1> Advising </h1>
+    <div>
+      
+      
+      <form method="post" action="/../~seipp1/advisor/profile/registerAdvisor.php">
+	
+	<label for="tbFirstName">First Name:</label> 
+	<input type="text" name="tbFirstName" placeholder="John" required autofocus />
+	<br/>
+	
+	<label for="tbLastName">Last Name:</label> 
+	<input type="text" name="tbLastName" placeholder="Doe" required />
+	<br/>
+	
+	<label for="tbUsername">Username:</label> 
+	<input type="text" name="tbUsername" placeholder="Spartan117" required />
+	<br/>
+	
+	<label for="pwPassword">Password:</label> 
+	<input type="password" name="pwPassword" required />
+	<br/>
+	
+	<label for="tbEmail">Email:</label> 
+	<input type="text" name="tbEmail" placeholder="John.Doe@google.com" pattern=".+@.+\...." required />
+	<br/>
+	
+	<button type="submit">Submit</button>
+	
+      </form>
+      
+      
+    </div>
+  </div>
 </body>
+
 <tail>
 </tail>
