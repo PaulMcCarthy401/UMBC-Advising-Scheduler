@@ -2,7 +2,7 @@
 
 // Start session and set Common
 session_start();
-include('../../CommonMethods.php');
+include('../../class/helper/CommonMethods.php');
 $debug = false;
 $COMMON = new Common($debug);
 
@@ -11,7 +11,7 @@ if (!(isset($_POST['nbApptID'])) ||
     $_POST['nbApptID'] == null)
   {
     // Set message and return to advisor manager
-    $_SESSION['UserMSG'] = "APPOINTMENT NOT REMOVED! 
+    $_SESSION['UserMSG'] = "APPOINTMENT NOT REMOVED!
               Please enter an 'Appt ID' to remove appointment.";
     header('Location: advisorManager.php');
     exit();
