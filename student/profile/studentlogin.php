@@ -1,6 +1,6 @@
 <?php
-require("./php/CommonMethods.php");
-require("./class/Student.php");
+require("../../class/helper/CommonMethods.php");
+require("../../class/Student.php");
 
 session_start();
 

@@ -1,6 +1,6 @@
 <?php
-require("./class/Appointment.php");
-require("./php/CommonMethods.php");
+require("../../class/Appointment.php");
+require("../../class/helper/CommonMethods.php");
 
 session_start();
 

@@ -2,7 +2,7 @@
 
 // Start session and set Common 
 session_start();
-include('../../CommonMethods.php');
+include('../../class/helper/CommonMethods.php');
 $debug = false;
 $COMMON = new Common($debug);
 
