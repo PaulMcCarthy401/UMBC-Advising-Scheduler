@@ -76,13 +76,13 @@ if (!empty($_POST))
 
         header("Location: ./appointments.php");
     } else {
-        require("./template/homepage.php");
+        require("./template/studentLogin.php");
     }
 }
 else
 {
     // Otherwise, render the page
-    require("./template/homepage.php");
+    require("./template/studentLogin.php");
 }
 
 
