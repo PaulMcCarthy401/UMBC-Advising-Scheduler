@@ -1,0 +1,1 @@
+mysql -u root -p pmccar2 pmccar2 <create-db.sql> output.tab

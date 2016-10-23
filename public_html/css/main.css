@@ -1,0 +1,57 @@
+body {
+    margin: 1em auto;
+    max-width: 40em;
+    padding: 0 .62em;
+    font: 1.2em/1.64em sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#container {
+    background-color: #EEEEEE;
+    padding: 20px;
+}
+
+#advisorlogin {
+    float: right;
+}
+
+h1, h2, h3 {
+    line-height: 1.2em;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin: 5px 0px 5px 0px;
+}
+
+input, select {
+    display: inline-block;
+    height: 25px;
+    width: 150px;
+}
+
+select {
+    width: auto;
+}
+
+input[type="submit"] {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-size: 14px;
+    width: auto;
+    height: auto;
+}
+
+
+.invalid {
+    padding: 5px;
+    background-color: #FFCDD2;
+    color: #F44336;
+}
