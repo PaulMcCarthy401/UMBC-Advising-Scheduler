@@ -20,7 +20,7 @@
                 <?php endif; ?>
                 </ul>
                 </div>
-                <form action="index.php" method="POST">
+                <form action="studentlogin.php" method="POST">
                     <label for="first_name"> First Name </label>
                     <input type="text" name="first_name" placeholder="John" required autofocus />
                     <br />
