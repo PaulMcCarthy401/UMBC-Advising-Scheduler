@@ -6,7 +6,7 @@
     </head>
     <body>
     <div id="container">
-        <a id="advisorlogin" href="../../../advisor/profile/advisorLogin.php"> Advisor Login </a>
+        <a id="advisorlogin" href="../../../CMSC331-Advising-Scheduler/advisor/profile/advisorLogin.php"> Advisor Login </a>
         <h1> Advising </h1>
             <div>
                 <?php if (isset($tPageError)): ?>
