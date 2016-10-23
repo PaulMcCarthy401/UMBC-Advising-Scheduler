@@ -11,5 +11,11 @@
 // directory, we can find the absolute project path no matter what file
 // the config is included from.
 define('PROJROOT', realpath(dirname(__FILE__).'/..'));
+define('DBHOST', 'studentdb-maria.gl.umbc.edu');
+
+// The database name of all users on GL is just their username
+define('DBNAME', 'username');
+define('DBUSER', 'username');
+define('DBPASS', 'password');
 
 ?>
