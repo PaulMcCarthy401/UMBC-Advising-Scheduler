@@ -7,8 +7,7 @@ session_start();
 // Check if the user tried to login
 $tPageError = NULL;
 
-if (!empty($_POST))
-{
+if (!empty($_POST)) {
     // Put all our form input into an array so it's easy to manage
     $form = array(
         "first_name" => $_POST["first_name"],
@@ -39,8 +38,9 @@ if (!empty($_POST))
     if (!preg_match("/[A-Za-z]{2}[0-9]{5}/", $student->studentID)) {
         array_push($tPageError, "Your student ID does not match the required format (AB12345).");
     }
-    if (count($tPageError) == 0) // Everything is valid.
-    {
+    
+    // Everything is valid.
+    if (count($tPageError) == 0) {
         $db = new Common(false);
 
         // First, check if there is already an existing user tied to this
@@ -56,7 +56,8 @@ if (!empty($_POST))
         // If we find that the user already has an assiociated ID
         if (mysql_num_rows($result) != 0) {
             $id = mysql_fetch_assoc($result)['ID'];
-        } else {
+        }
+        else {
             $query = "
             INSERT INTO `Student` (`FirstName`, `LastName`, `StudentID`, `Email`, `Major`)
             VALUES ('$student->firstName', '$student->lastName', '$student->studentID', '$student->email', '$student->major');
@@ -68,8 +69,9 @@ if (!empty($_POST))
             $id = mysql_insert_id($result);
         }
 
-        if ($id == -1)
+        if ($id == -1) {
             die("Error: something wrong with ID");
+        }
 
         $_SESSION['studentID'] = $id;
         $_SESSION['studentFirstName'] = $student->firstName;
@@ -78,9 +80,7 @@ if (!empty($_POST))
     } else {
         require("./template/studentLogin.php");
     }
-}
-else
-{
+} else {
     // Otherwise, render the page
     require("./template/studentLogin.php");
 }
