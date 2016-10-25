@@ -50,7 +50,7 @@ if ($timeInt < EARLIEST || $timeInt > LATEST)
     // Set message and return to advisor manager
     $_SESSION['UserMSG'] = "APPOINTMENT NOT ADDED! 
               Time not between 8AM and 4PM.";
-    header('Location: advisorManager.php');
+    header('Location: /advisor/profile/advisorManager.php');
     exit();
 }
 
@@ -72,7 +72,7 @@ while ($row = mysql_fetch_assoc($rs))
         // Set message and return to advisor manager
         $_SESSION['UserMSG'] = "APPOINTMENT NOT ADDED! 
                         Appoint time overlaps with an existing appointment.";
-        header('Location: advisorManager.php');
+        header('Location: /advisor/profile/advisorManager.php');
         exit();
     }
 }

@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="container">
-            <a href="gateway.html">Logout</a><br>
+            <a href="/advisor/profile/logout.php">Logout</a><br>
 
             <h4> ADD APPOINTMENT: </h4>
             <p>To add an appointment, enter your appointment info below. </p>
