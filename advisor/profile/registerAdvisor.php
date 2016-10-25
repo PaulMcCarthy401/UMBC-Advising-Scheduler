@@ -11,7 +11,7 @@ if (!empty($_POST)) {
     // Adding new advisor was successful
     header('Location: /advisor/profile/advisorLogin.php');
 } else {
-    require($config['PROJROOT']."/advisor/profile/template/advisorRegister.html");
+    require($config['PROJROOT']."/advisor/profile/template/registerAdvisor.php");
 }
 
 ?>

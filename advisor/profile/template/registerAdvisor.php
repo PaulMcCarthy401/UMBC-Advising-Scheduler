@@ -29,7 +29,7 @@
 					<input type="email" name="tbEmail" placeholder="John.Doe@google.com" required />
 					<br/>
 
-					<input type="submit"> Submit </input>
+					<input type="submit" value="Submit">
 				</form>
 			</div>
 		</div>
