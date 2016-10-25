@@ -68,7 +68,7 @@ if (!empty($_POST)) {
 
             // Grab the resultant id from the new student
             // we've created in the database.
-            $id = mysql_insert_id($result);
+            $id = mysql_insert_id();
         }
 
         if ($id == -1) {

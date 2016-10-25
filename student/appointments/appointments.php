@@ -10,8 +10,11 @@ if (!empty($_POST)) {
     $apptID = $_POST["id"];
     $studentID = $_SESSION["studentID"];
     $result = $db->executeQuery("INSERT INTO `StudentAppt` (`StudentID`, `ApptID`) VALUES ('$studentID', '$apptID')", "appointments.php");
+
+    header('Location: /student/appointments/appointments.php');
 } else {
     echo($_SESSION['studentID']);
+
     $db = new Common(false);
     $result = $db->executeQuery("SELECT * FROM `Appointment`", "appointments.php");
     $appts = array();
