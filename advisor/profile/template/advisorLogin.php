@@ -6,8 +6,9 @@
     </head>
     <body>
         <div class="container">
+            <a id="advisorlogin" href="/student/profile/studentLogin.php"> Student Login </a>
             <!--Get Password and Name-->
-            <form action="advisorLogin.php" method='post'>
+            <form action="/advisor/profile/advisorLogin.php" method='post'>
                 <label for="tfUser"> Username: </label>
                 <input type="text" size="8" maxlength="8" name="tfUser"><br>
                 <label for="pwPassword"> Password: </label>

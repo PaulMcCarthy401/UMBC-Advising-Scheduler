@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="container">
-            <a id="advisorlogin" href="./studentprofile.php"> Welcome, <?php echo($tStudentName)?> </a>
+            <a id="advisorlogin" href="/student/profile/studentProfile.php"> Welcome, <?php echo($tStudentName)?> </a>
             <h1> Appointments </h1>
             <div id="appointmentContainer">
                 <table>
