@@ -1,4 +1,6 @@
 <?php
+$config = require('../../config/config.php');
+include($config['PROJROOT'].'/class/helper/CommonMethods.php');
 
 // CONSTANTS
 define("HOUR","60"); // Minutes in an hour
@@ -8,7 +10,6 @@ define("APPT_LENGTH","30"); // Length of appointment in minutes
 
 // Start session and set Common
 session_start();
-include('../../CommonMethods.php');
 $debug = false;
 $COMMON = new Common($debug);
 
@@ -23,7 +24,7 @@ if (!(isset($_POST['dtDate']) &&
     // Set message and return to advisor manager
     $_SESSION['UserMSG'] = "APPOINTMENT NOT ADDED! 
               Please enter all fields correctly to add appointment.";
-    header('Location: advisorManager.php');
+    header('Location: /advisor/profile/advisorManager.php');
     exit();
 }
 
@@ -96,6 +97,6 @@ $COMMON->executeQuery($sqlAdApptIn,$_SERVER['SCRIPT_NAME']);
 
 // Set message and return to advisor manager
 $_SESSION['UserMSG'] = "Appointment submitted.";
-header('Location: advisorManager.php');
+header('Location: /advisor/profile/advisorManager.php');
 
 ?>
