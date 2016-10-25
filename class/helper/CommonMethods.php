@@ -1,16 +1,16 @@
 <?php 
 
-$config = require('../../config/config.php');
+require('../../config/databaseConfig.php');
 
 class Common
 {
 	var $conn;
 	var $debug;
-			
+
 	function Common($debug)
 	{
 		$this->debug = $debug; 
-		$rs = $this->connect($config['DBNAME']); // db name really here
+		$rs = $this->connect(DBNAME); // db name really here
 		return $rs;
 	}
 
@@ -18,7 +18,7 @@ class Common
 	
 	function connect($db)// connect to MySQL
 	{
-		$conn = @mysql_connect($config['DBHOST'], $config['DBUSER'], $config['DBPASS']) or die("Could not connect to MySQL");
+		$conn = @mysql_connect(DBHOST, DBUSER, DBPASS) or die("Could not connect to MySQL");
 		$rs = @mysql_select_db($db, $conn) or die("Could not connect select $db database");
 		$this->conn = $conn; 
 	}

@@ -13,10 +13,6 @@
 
 return array(
     'PROJROOT' => realpath(dirname(__FILE__).'/..'),
-    'DBHOST' => '127.0.0.1',
-    'DBNAME' => 'pmccar2',
-    'DBUSER' => 'root',
-    'DBPASS' => 'pmccar2'
 );
 
 ?>
