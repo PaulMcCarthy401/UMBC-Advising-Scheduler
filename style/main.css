@@ -54,3 +54,9 @@ input[type="submit"] {
     background-color: #FFCDD2;
     color: #F44336;
 }
+
+.success {
+    padding: 5px;
+    background-color: #C8E6C9;
+    color: #4CAF50;
+}

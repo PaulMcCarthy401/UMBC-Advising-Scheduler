@@ -7,7 +7,13 @@
     <body>
         <div class="container">
             <a id="advisorlogin" href="/student/profile/studentProfile.php"> Welcome, <?php echo($tStudentName)?> </a>
+            
             <h1> Appointments </h1>
+            <?php if (isset($tMsg)): ?>
+            <div class="success">
+            <?php echo($tMsg); ?>
+            </div>
+            <?php endif; ?>
             <div id="appointmentContainer">
                 <table>
                     <thead>
