@@ -29,7 +29,6 @@ label {
 input, select {
     display: inline-block;
     height: 25px;
-    width: 150px;
 }
 
 select {

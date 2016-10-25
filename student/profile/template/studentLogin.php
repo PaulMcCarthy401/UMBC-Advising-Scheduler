@@ -30,7 +30,7 @@
                     <br />
 
                     <label for="student_id"> Student ID </label>
-                    <input type="text" size="10" name="student_id" pattern="[A-Za-z]{2}[0-9]{5}" placeholder="AA12345" required>
+                    <input type="text" size="7" maxlength="7" name="student_id" pattern="[A-Za-z]{2}[0-9]{5}" placeholder="AA12345" required>
                     <br />
                     <label for="email"> E-Mail </label>
                     <input type="email" name="email" placeholder="example@example.com" required>

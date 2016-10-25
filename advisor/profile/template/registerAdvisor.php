@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="/style/main.css">
 	</head>
 	<body>
-		<div id="container">
+		<div class="container">
 			<h1> Advising </h1>
 			<div>
 				<form method="post" action="/advisor/profile/registerAdvisor.php">
