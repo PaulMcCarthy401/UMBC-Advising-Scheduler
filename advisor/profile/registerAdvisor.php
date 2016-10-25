@@ -1,14 +1,17 @@
 <?php
+$config = require("../../config/config.php");
+require($config['PROJROOT']."/class/Advisor.php");
 
-require("/~seipp1/class/Advisor.php");
-
-if (!empty($_POST)){
+if (!empty($_POST)) {
     // Create new advisor object, store post data into object
     $advisor = new Advisor($_POST['tbFirstName'], $_POST['tbLastName'], $_POST['tbUsername'], $_POST['pwPassword'], $_POST['tbEmail']);
 
     $advisor.addNewAdvisor();
 
-    require("./template/studentLogin.php");
+    // Adding new advisor was successful
+    header('Location: /advisor/profile/advisorLogin.php');
+} else {
+    require($config['PROJROOT']."/advisor/profile/template/advisorRegister.html");
 }
 
 ?>

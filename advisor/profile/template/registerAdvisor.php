@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<title> Advising </title>
-		<link rel="stylesheet" type="text/css" href="~seipp1/style/main.css">
+		<link rel="stylesheet" type="text/css" href="/style/main.css">
 	</head>
 	<body>
 		<div id="container">
 			<h1> Advising </h1>
 			<div>
-				<form method="post" action="/../~seipp1/advisor/profile/registerAdvisor.php">
+				<form method="post" action="/advisor/profile/registerAdvisor.php">
 					<label for="tbFirstName"> First Name: </label> 
 					<input type="text" name="tbFirstName" placeholder="John" required autofocus />
 					<br/>

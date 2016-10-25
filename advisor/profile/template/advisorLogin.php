@@ -14,7 +14,7 @@
             <input type="submit" value="Login">
         </form>
 
-        <a href="advisorRegister.html"> Click here if you have not yet registered! </a>
+        <a href="/advisor/profile/template/advisorRegister.html"> Click here if you have not yet registered! </a>
 
     </body>
 </html>

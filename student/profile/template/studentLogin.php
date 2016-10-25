@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Advising</title>
-        <link rel="stylesheet" type="text/css" href="/style/main.css" />
+        <link rel="stylesheet" type="text/css" href="/style/main.css">
     </head>
     <body>
     <div id="container">
-        <a id="advisorlogin" href="../../../CMSC331-Advising-Scheduler/advisor/profile/advisorLogin.php"> Advisor Login </a>
+        <a id="advisorlogin" href="/advisor/profile/advisorLogin.php"> Advisor Login </a>
         <h1> Advising </h1>
             <div>
                 <?php if (isset($tPageError)): ?>
@@ -20,20 +20,20 @@
                 <?php endif; ?>
                 </ul>
                 </div>
-                <form action="studentlogin.php" method="POST">
+                <form action="/student/profile/studentlogin.php" method="POST">
                     <label for="first_name"> First Name </label>
-                    <input type="text" name="first_name" placeholder="John" required autofocus />
+                    <input type="text" name="first_name" placeholder="John" required autofocus>
                     <br />
 
                     <label for="last_name"> Last Name </label>
-                    <input type="text" name="last_name" placeholder="Doe" required />
+                    <input type="text" name="last_name" placeholder="Doe" required>
                     <br />
 
                     <label for="student_id"> Student ID </label>
-                    <input type="text" size="10" name="student_id" pattern="[A-Za-z]{2}[0-9]{5}" placeholder="AA12345" required />
+                    <input type="text" size="10" name="student_id" pattern="[A-Za-z]{2}[0-9]{5}" placeholder="AA12345" required>
                     <br />
                     <label for="email"> E-Mail </label>
-                    <input type="email" name="email" placeholder="example@example.com" required />
+                    <input type="email" name="email" placeholder="example@example.com" required>
                     <br />
 
                     <label for="major"> Major </label>
@@ -50,7 +50,7 @@
                         <option> Computer Engineering </option>
                     </select>
                     <br />
-                    <input type="submit" value="continue"/>
+                    <input type="submit" value="continue">
                 </form>
             </div>
         </div>
