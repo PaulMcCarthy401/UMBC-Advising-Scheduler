@@ -6,7 +6,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-#container {
+.container {
     background-color: #EEEEEE;
     padding: 20px;
 }

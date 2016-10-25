@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="/style/main.css" />
     </head>
     <body>
-        <div id="container">
+        <div class="container">
             <a id="advisorlogin" href="./studentprofile.php"> Welcome, <?php echo($tStudentName)?> </a>
             <h1> Appointments </h1>
             <div id="appointmentContainer">

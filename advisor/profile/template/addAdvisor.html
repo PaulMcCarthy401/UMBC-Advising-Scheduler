@@ -2,20 +2,23 @@
 <html>
     <head>
         <title>Advisor Adder</title>
+        <link rel="stylesheet" type="text/css" href="/style/main.css">
     </head>
     <body>
-        <form action="../addAdvisor.php" method='post'>
-            <label for="tfUser"> Username: </label>
-            <input type="text" size="8" maxlength="8" name="tfUser"><br>
-            
-            <label for="pwPassword"> Password: </label>
-            <input type="password" size="8" maxlength="8" name="pwPassword"><br>
+        <div class="container">
+            <form action="../addAdvisor.php" method='post'>
+                <label for="tfUser"> Username: </label>
+                <input type="text" size="8" maxlength="8" name="tfUser"><br>
+                
+                <label for="pwPassword"> Password: </label>
+                <input type="password" size="8" maxlength="8" name="pwPassword"><br>
 
-            <label for="tfEmail"> Email: </label>
-            <input type="email" size="20" maxlength="20" name="tfEmail"><br>
+                <label for="tfEmail"> Email: </label>
+                <input type="email" size="20" maxlength="20" name="tfEmail"><br>
 
-            <input type="submit" value="Add Advisor">
-        </form>
+                <input type="submit" value="Add Advisor">
+            </form>
+        </div>
     </body>
     </head>
 </html>

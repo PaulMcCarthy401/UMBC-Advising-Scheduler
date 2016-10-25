@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="/style/main.css">
     </head>
     <body>
-    <div id="container">
+    <div class="container">
         <a id="advisorlogin" href="/advisor/profile/advisorLogin.php"> Advisor Login </a>
         <h1> Advising </h1>
             <div>

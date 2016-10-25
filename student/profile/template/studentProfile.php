@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>Advising</title>
-        <link rel="stylesheet" type="text/css" href="/style/main.css" />
+        <link rel="stylesheet" type="text/css" href="/style/main.css">
     </head>
     <body>
-        <div id="container">
+        <div class="container">
             <h1> Your Profile </h1>
             <div id="appointmentContainer">
                 <p><?php echo($tStudent->firstName)?></p>
