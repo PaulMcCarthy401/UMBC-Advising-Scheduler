@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-$config = require('../../config/config.php');
-require($config['PROJROOT'].'/class/helper/CommonMethods.php');
-require($config['PROJROOT'].'/class/Appointment.php');
+require('../../config/config.php');
+require(PROJROOT.'/class/helper/CommonMethods.php');
+require(PROJROOT.'/class/Appointment.php');
 
 if (!empty($_POST)) {
     if (isset($_POST['id'])) {
@@ -34,7 +34,7 @@ if (!empty($_POST)) {
 
         
 
-        require($config['PROJROOT'].'/student/appointments/template/appointments.php');
+        require(PROJROOT.'/student/appointments/template/appointments.php');
     }
 } else {
     header('Location: /student/appointments/appointments.php');

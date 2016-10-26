@@ -2,7 +2,11 @@
 
 // Start session and set Common 
 session_start();
-include('../../class/helper/CommonMethods.php');
+
+require('../../config/config.php');
+include(PROJROOT.'/class/helper/CommonMethods.php');
+
+
 $debug = false;
 $COMMON = new Common($debug);
 

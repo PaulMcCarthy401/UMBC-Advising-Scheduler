@@ -1,8 +1,8 @@
 <?php
-$config = require('../../config/config.php');
+require('../../config/config.php');
 
-require($config['PROJROOT']."/class/helper/CommonMethods.php");
-require($config['PROJROOT']."/class/Student.php");
+require(PROJROOT."/class/helper/CommonMethods.php");
+require(PROJROOT."/class/Student.php");
 
 session_start();
 

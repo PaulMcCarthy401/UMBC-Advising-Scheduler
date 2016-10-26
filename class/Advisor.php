@@ -1,5 +1,7 @@
 <?php
+
 require('../../class/helper/CommonMethods.php');
+
 class Advisor {
     public $id;
     public $firstName;

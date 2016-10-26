@@ -11,8 +11,11 @@
 // directory, we can find the absolute project path no matter what file
 // the config is included from.
 
-return array(
-    'PROJROOT' => realpath(dirname(__FILE__).'/..'),
-);
+// return array(
+//     'PROJROOT' => realpath(dirname(__FILE__).'/..'),
+// );
+
+define('PROJROOT', realpath(dirname(__FILE__).'/..'));
+
 
 ?>

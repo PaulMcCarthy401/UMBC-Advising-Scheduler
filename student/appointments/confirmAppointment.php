@@ -1,7 +1,7 @@
 <?php
-$config = require('../../config/config.php');
-require($config['PROJROOT'].'/class/helper/CommonMethods.php');
-require($config['PROJROOT'].'/class/Appointment.php');
+require('../../config/config.php');
+require(PROJROOT.'/class/helper/CommonMethods.php');
+require(PROJROOT.'/class/Appointment.php');
 
 if(!empty($_POST)) {
     $id = $_POST['id'];
@@ -20,7 +20,7 @@ if(!empty($_POST)) {
 
     $tAppt = $appt;
 
-    require($config['PROJROOT'].'/student/appointments/template/confirmAppointment.php');
+    require(PROJROOT.'/student/appointments/template/confirmAppointment.php');
 } else {
     header('Location: /student/appointments/appointments.php');
 }

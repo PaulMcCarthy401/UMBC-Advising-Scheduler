@@ -1,6 +1,6 @@
 <?php
-$config = require("../../config/config.php");
-require($config['PROJROOT']."/class/Advisor.php");
+require("../../config/config.php");
+require(PROJROOT."/class/Advisor.php");
 
 if (!empty($_POST)) {
     // Create new advisor object, store post data into object
@@ -11,7 +11,7 @@ if (!empty($_POST)) {
     // Adding new advisor was successful
     header('Location: /advisor/profile/advisorLogin.php');
 } else {
-    require($config['PROJROOT']."/advisor/profile/template/registerAdvisor.php");
+    require(PROJROOT."/advisor/profile/template/registerAdvisor.php");
 }
 
 ?>

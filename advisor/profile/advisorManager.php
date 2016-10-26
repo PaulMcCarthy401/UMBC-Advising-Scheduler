@@ -1,6 +1,6 @@
 <?php
-$config = require('../../config/config.php');
-include($config['PROJROOT'].'/class/helper/CommonMethods.php');
+require('../../config/config.php');
+include(PROJROOT.'/class/helper/CommonMethods.php');
 session_start();
 
 // CONSTANTS
@@ -15,7 +15,7 @@ $COMMON = new Common($debug);
 echo("MESSAGE CENTER: ".$_SESSION['UserMSG']."<br>");
 
 // Render main form
-require($config['PROJROOT'].'/advisor/profile/template/advisorManager.php');
+require(PROJROOT.'/advisor/profile/template/advisorManager.php');
 
 /*** Begin rendering appointments ***/
 
