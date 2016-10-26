@@ -2,14 +2,14 @@
 <html>
     <head>
         <title>Advising</title>
-        <link rel="stylesheet" type="text/css" href="/style/main.css">
+<link rel="stylesheet" type="text/css" href="../../style/main.css">
     </head>
     <body>
     <div class="container">
         <nav class="nav">
             <ul>
                 <li>
-                    <a href="/advisor/profile/advisorLogin.php"> Advisor Login </a>
+                    <a href="../../advisor/profile/advisorLogin.php"> Advisor Login </a>
                 </li>
             </ul>
         </nav>
@@ -26,7 +26,7 @@
                 <?php endif; ?>
                 </ul>
                 </div>
-                <form action="/student/profile/studentLogin.php" method="POST">
+                <form action="../../student/profile/studentLogin.php" method="POST">
                     <label for="first_name"> First Name </label>
                     <input type="text" name="first_name" placeholder="John" required autofocus>
                     <br />

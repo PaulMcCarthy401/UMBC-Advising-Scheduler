@@ -2,27 +2,27 @@
 <html>
     <head>
         <title>Advisor Manager</title>
-        <link rel="stylesheet" type="text/css" href="/style/main.css">
+        <link rel="stylesheet" type="text/css" href="../../style/main.css">
     </head>
     <body>
         <div class="container">
-            <a href="/advisor/profile/logout.php">Logout</a><br>
+            <a href="../../advisor/profile/logout.php">Logout</a><br>
 
             <h4> ADD APPOINTMENT: </h4>
             <p>To add an appointment, enter your appointment info below. </p>
             <p>Appointments can be made starting 8AM to 4PM and are 30 minutes long. </p>
 
             <!--Get Appointment info-->
-            <form action="/advisor/appointments/addAppointment.php" method='post'>
+            <form action="../../advisor/appointments/addAppointment.php" method='post'>
 
                     <label for="dtDate"> Date: </label>
-                    <input type="date" name="dtDate"><br>
+                    <input type="date" name="dtDate" placeholder="MM/DD/YYYY" required autofocus><br>
                     
                     <label for="tiTime"> Time: </label>
-                    <input type="time" name="tiTime"><br>
+                    <input type="time" name="tiTime" placeholder="HH:MM" required><br>
 
                     <label for="tfLocation"> Location: </label>
-                    <input type="text" size="20" maxlength="20" name="tfLocation"><br>
+                    <input type="text" size="20" maxlength="20" name="tfLocation" placeholder="Room X" required><br>
 
                     <h4> Appointment Type: </h4>
 
@@ -40,7 +40,7 @@
             </p>
 
             <!--Remove appointment-->
-            <form action="/advisor/appointments/removeAppointment.php" method='post'>
+            <form action="../../advisor/appointments/removeAppointment.php" method='post'>
                 <label for="nbApptID"> Appt ID of appointment to remove: </label>
                 <input type="number" size="3" maxlength="3" min="1" name="nbApptID"><br>
 

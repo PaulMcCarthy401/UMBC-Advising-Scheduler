@@ -24,13 +24,17 @@ if (!(isset($_POST['dtDate']) &&
     // Set message and return to advisor manager
     $_SESSION['UserMSG'] = "APPOINTMENT NOT ADDED! 
               Please enter all fields correctly to add appointment.";
-    header('Location: /advisor/profile/advisorManager.php');
+    header('Location: ../../advisor/profile/advisorManager.php');
     exit();
 }
 
 // Set variables
 $AdvisorID = $_SESSION['UserID'];
+//format date correctly:
 $Date = $_POST['dtDate'];
+$Date = explode("/", $Date);
+$Date = $Date[2]."-".$Date[0]."-".$Date[1];
+
 $Time = $_POST['tiTime']; 
 $Location = $_POST['tfLocation'];     
 $Type = $_POST['rbType'];     
@@ -50,7 +54,7 @@ if ($timeInt < EARLIEST || $timeInt > LATEST)
     // Set message and return to advisor manager
     $_SESSION['UserMSG'] = "APPOINTMENT NOT ADDED! 
               Time not between 8AM and 4PM.";
-    header('Location: /advisor/profile/advisorManager.php');
+    header('Location: ../../advisor/profile/advisorManager.php');
     exit();
 }
 
@@ -72,18 +76,26 @@ while ($row = mysql_fetch_assoc($rs))
         // Set message and return to advisor manager
         $_SESSION['UserMSG'] = "APPOINTMENT NOT ADDED! 
                         Appoint time overlaps with an existing appointment.";
-        header('Location: /advisor/profile/advisorManager.php');
+        header('Location: ../../advisor/profile/advisorManager.php');
         exit();
     }
 }
    
 // If correct and no overlap (made it this far), add the appointment
 
+//format Time
+$Time = explode(":", $Time);
+if (count($Time) == 1)
+  $Time = $Time.":00:00";
+else if (count($Time) == 2)
+  $Time = $Time[0].":".$Time[1].":00";
+else
+  $Time = $Time[0].":".$Time[1].":".$Time[2];
+
+
 // Add the Appointment
-$sqlApptIn = "
-INSERT INTO `Appointment` (`ID`,`Date`,`StartTime`,`Location`, `Type`)
-VALUES ('','$Date','$Time','$Location','$Type')
-";
+$sqlApptIn = "INSERT INTO `Appointment` (`ID`,`Date`,`StartTime`,`Location`, `Type`) ".
+             "VALUES ('','$Date','$Time','$Location','$Type')";
 
 $COMMON->executeQuery($sqlApptIn,$_SERVER['SCRIPT_NAME']);
 
@@ -97,6 +109,6 @@ $COMMON->executeQuery($sqlAdApptIn,$_SERVER['SCRIPT_NAME']);
 
 // Set message and return to advisor manager
 $_SESSION['UserMSG'] = "Appointment submitted.";
-header('Location: /advisor/profile/advisorManager.php');
+header('Location: ../../advisor/profile/advisorManager.php');
 
 ?>

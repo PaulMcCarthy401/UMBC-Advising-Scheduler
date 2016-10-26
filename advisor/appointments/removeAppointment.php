@@ -2,7 +2,7 @@
 // Start session and set Common
 session_start();
 
-require('../../config/config.php')
+require('../../config/config.php');
 require_once(PROJROOT.'/class/helper/CommonMethods.php');
 
 $debug = false;
@@ -14,7 +14,7 @@ if (!(isset($_POST['nbApptID'])) || $_POST['nbApptID'] == null) {
     // Set message and return to advisor manager
     $_SESSION['UserMSG'] = "APPOINTMENT NOT REMOVED!
               Please enter an 'Appt ID' to remove appointment.";
-    header('Location: /advisor/profile/advisorManager.php');
+    header('Location: ../../advisor/profile/advisorManager.php');
     exit();
 }
 
@@ -37,7 +37,7 @@ if (mysql_num_rows($rs) == 0) {
     $_SESSION['UserMSG'] = "APPOINTMENT NOT REMOVED! 
               That is not one of your appointments.
               Please enter one of your 'Appt ID' to remove an appointment.";
-    header('Location: /advisor/profile/advisorManager.php');
+    header('Location: ../../advisor/profile/advisorManager.php');
     exit();
 }
 // Appointment is there
@@ -58,7 +58,7 @@ else {
     
     // Set message and return to advisor manager
     $_SESSION['UserMSG'] = "Appointment removed.";
-    header('Location: /advisor/profile/advisorManager.php');
+    header('Location: ../../advisor/profile/advisorManager.php');
     exit();
 }
 
