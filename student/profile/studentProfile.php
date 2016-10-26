@@ -1,5 +1,5 @@
 <?php
-require('../../config/config.php');
+require_once('../../config/config.php');
 require(PROJROOT."/class/helper/CommonMethods.php");
 require(PROJROOT."/class/Student.php");
 
@@ -27,6 +27,6 @@ $tStudent = new Student(
     $studentInfo['Major']
 );
 
-require("./template/studentProfile.php");
+require('./template/studentProfile.php');
 
 ?>

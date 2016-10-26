@@ -14,5 +14,5 @@ while ($row = mysql_fetch_assoc($result)) {
 }
 
 $tStudentName = $_SESSION['studentFirstName'];
-require("./template/appointments.php");
+require('./template/appointments.php');
 ?>

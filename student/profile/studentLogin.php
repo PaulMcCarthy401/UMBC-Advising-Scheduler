@@ -1,5 +1,5 @@
 <?php
-require('../../config/config.php');
+require_once('../../config/config.php');
 
 require(PROJROOT."/class/helper/CommonMethods.php");
 require(PROJROOT."/class/Student.php");
@@ -80,11 +80,11 @@ if (!empty($_POST)) {
 
         header("Location: /student/appointments/appointments.php");
     } else {
-        require("./template/studentLogin.php");
+        require('./template/studentLogin.php');
     }
 } else {
     // Otherwise, render the page
-    require("./template/studentLogin.php");
+    require('./template/studentLogin.php');
 }
 
 

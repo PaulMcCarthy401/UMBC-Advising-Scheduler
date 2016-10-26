@@ -1,6 +1,6 @@
 <?php
-require('../../config/config.php');
-include(PROJROOT.'/class/helper/CommonMethods.php');
+require_once('../../config/config.php');
+require(PROJROOT.'/class/helper/CommonMethods.php');
 
 // CONSTANTS
 define("HOUR","60"); // Minutes in an hour

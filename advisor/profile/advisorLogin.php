@@ -3,8 +3,8 @@
 // Start session and set Common 
 session_start();
 
-require('../../config/config.php');
-include(PROJROOT.'/class/helper/CommonMethods.php');
+require_once('../../config/config.php');
+require(PROJROOT.'/class/helper/CommonMethods.php');
 
 
 $debug = false;
@@ -52,7 +52,7 @@ function getLogin($warning) {
     }
 
     // Render advisor login to the user
-    require("./template/advisorLogin.php");
+    require('./template/advisorLogin.php');
 }
 
 ?>

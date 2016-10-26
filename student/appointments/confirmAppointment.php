@@ -1,5 +1,5 @@
 <?php
-require('../../config/config.php');
+require_once('../../config/config.php');
 require(PROJROOT.'/class/helper/CommonMethods.php');
 require(PROJROOT.'/class/Appointment.php');
 

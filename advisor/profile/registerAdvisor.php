@@ -1,5 +1,5 @@
 <?php
-require("../../config/config.php");
+require_once('../../config/config.php');
 require(PROJROOT."/class/Advisor.php");
 
 if (!empty($_POST)) {
