@@ -78,7 +78,7 @@ if (!empty($_POST)) {
         $_SESSION['studentID'] = $id;
         $_SESSION['studentFirstName'] = $student->firstName;
 
-        header("Location: ../appointments/appointments.php");
+        header("Location: /student/appointments/appointments.php");
     } else {
         require("./template/studentLogin.php");
     }

@@ -1,6 +1,7 @@
 <?php
-require("../../class/Appointment.php");
-require("../../class/helper/CommonMethods.php");
+require('../../config/config.php')
+require(PROJROOT."/class/Appointment.php");
+require(PROJROOT."/class/helper/CommonMethods.php");
 
 session_start();
 

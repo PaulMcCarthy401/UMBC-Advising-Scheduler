@@ -1,6 +1,7 @@
 <?php
 
-require('../../class/helper/CommonMethods.php');
+require('../config/config.php');
+require(PROJROOT.'/class/helper/CommonMethods.php');
 
 class Advisor {
     public $id;
