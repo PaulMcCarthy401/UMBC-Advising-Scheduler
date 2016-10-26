@@ -13,7 +13,29 @@
                     </li>
                 </ul>
             </nav>
+
             <h1> Advisor Login </h1>
+
+            <?php if (isset($template['error'])): ?>
+			<div class="invalid">
+				<ul>
+				<?php foreach ($template['error'] as $err): ?>
+					<li> <?php echo($err); ?> </li>
+				<?php endforeach; ?>
+				</ul>
+			</div>
+			<?php endif; ?>
+
+			<?php if (isset($template['success'])): ?>
+			<div class="success">
+				<ul>
+				<?php foreach ($template['success'] as $err): ?>
+					<li> <?php echo($err); ?> </li>
+				<?php endforeach; ?>
+				</ul>
+			</div>
+			<?php endif; ?>
+
             <!--Get Password and Name-->
             <form action="/advisor/profile/advisorLogin.php" method='post'>
                 <label for="tfUser"> Username: </label>

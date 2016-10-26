@@ -1,7 +1,6 @@
 <?php
 
 require_once('../../config/config.php');
-require(PROJROOT.'/class/helper/CommonMethods.php');
 
 class Advisor {
     public $id;
@@ -20,6 +19,8 @@ class Advisor {
     }
 
     public function addNewAdvisor() {
+        require_once(PROJROOT.'/class/helper/CommonMethods.php');
+
         $db = new Common(false);
 
         //verify advisor doesn't already exist in database
@@ -36,10 +37,11 @@ class Advisor {
             VALUES ('".$this->username."','".$this->password."','".$this->email."','')
             ";
             $db->executeQuery($sql,"Register Advisor");
-            echo "<script>alert('You have been added.');</script>";
-        } else {
-            echo "Username taken, please choose another.";
+
+            return "SUCCESS";
         }
+
+        return "USERNAME_TAKEN";
     }
 }
 ?>

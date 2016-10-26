@@ -13,7 +13,29 @@
                     </li>
                 </ul>
             </nav>
+			
 			<h1> Register </h1>
+
+			<?php if (isset($template['error'])): ?>
+			<div class="invalid">
+				<ul>
+				<?php foreach ($template['error'] as $err): ?>
+					<li> <?php echo($err); ?> </li>
+				<?php endforeach; ?>
+				</ul>
+			</div>
+			<?php endif; ?>
+
+			<?php if (isset($template['success'])): ?>
+			<div class="success">
+				<ul>
+				<?php foreach ($template['success'] as $err): ?>
+					<li> <?php echo($err); ?> </li>
+				<?php endforeach; ?>
+				</ul>
+			</div>
+			<?php endif; ?>
+
 			<div>
 				<form method="post" action="/advisor/profile/registerAdvisor.php">
 					<label for="tbFirstName"> First Name: </label> 
