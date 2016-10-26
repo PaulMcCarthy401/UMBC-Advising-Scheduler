@@ -26,8 +26,8 @@ class Advisor {
         $sql = "
         SELECT *
         FROM `Advisor`
-        WHERE 'Username' = '".$this->username."'";
-        $result = $db->executeQuery($sql, "Add Advisor");
+        WHERE `Username` = '".$this->username."'";
+        $result = $db->executeQuery($sql, "Advisor.php");
 
         if (mysql_num_rows($result) == 0) {
             //if no rows returned, no username found, continue with insert
