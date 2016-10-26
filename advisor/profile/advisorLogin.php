@@ -4,7 +4,7 @@
 session_start();
 
 require_once('../../config/config.php');
-require(PROJROOT.'/class/helper/CommonMethods.php');
+require_once(PROJROOT.'/class/helper/CommonMethods.php');
 
 
 $debug = false;
@@ -52,7 +52,7 @@ function getLogin($warning) {
     }
 
     // Render advisor login to the user
-    require('./template/advisorLogin.php');
+    require(PROJROOT.'/advisor/profile/template/advisorLogin.php');
 }
 
 ?>

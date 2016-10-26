@@ -3,7 +3,7 @@
 session_start();
 
 require('../../config/config.php')
-require(PROJROOT.'/class/helper/CommonMethods.php');
+require_once(PROJROOT.'/class/helper/CommonMethods.php');
 
 $debug = false;
 $COMMON = new Common($debug);

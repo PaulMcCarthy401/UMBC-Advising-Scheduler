@@ -1,6 +1,6 @@
 <?php
 require_once('../../config/config.php');
-require(PROJROOT.'/class/helper/CommonMethods.php');
+require_once(PROJROOT.'/class/helper/CommonMethods.php');
 session_start();
 
 // CONSTANTS

@@ -1,6 +1,6 @@
 <?php 
 
-require('../../config/databaseConfig.php');
+require_once('../../config/databaseConfig.php');
 
 class Common
 {

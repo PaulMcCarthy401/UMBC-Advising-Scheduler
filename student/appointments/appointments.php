@@ -1,7 +1,8 @@
 <?php
-require('../../config/config.php')
+
+require('../../config/config.php');
 require(PROJROOT."/class/Appointment.php");
-require(PROJROOT."/class/helper/CommonMethods.php");
+require_once(PROJROOT.'/class/helper/CommonMethods.php');
 
 session_start();
 
@@ -14,5 +15,6 @@ while ($row = mysql_fetch_assoc($result)) {
 }
 
 $tStudentName = $_SESSION['studentFirstName'];
-require('./template/appointments.php');
+require(PROJROOT.'/student/appointments/template/appointments.php');
+
 ?>
