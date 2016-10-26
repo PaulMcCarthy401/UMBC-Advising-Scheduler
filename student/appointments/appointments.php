@@ -5,13 +5,15 @@ require("../../class/helper/CommonMethods.php");
 session_start();
 
 if (!empty($_POST)) {
-    // Make the student->appt pair in the db
-    $db = new Common(false);
-    $apptID = $_POST["id"];
-    $studentID = $_SESSION["studentID"];
-    $result = $db->executeQuery("INSERT INTO `StudentAppt` (`StudentID`, `ApptID`) VALUES ('$studentID', '$apptID')", "appointments.php");
-    
-    $tMsg = "Success, you have picked appointment ID: $apptID.";
+    if (isset($_POST['id'])) {
+        // Make the student->appt pair in the db
+        $db = new Common(false);
+        $apptID = $_POST["id"];
+        $studentID = $_SESSION["studentID"];
+        $result = $db->executeQuery("INSERT INTO `StudentAppt` (`StudentID`, `ApptID`) VALUES ('$studentID', '$apptID')", "appointments.php");
+        
+        $tMsg = "Success, you have picked appointment ID: $apptID.";
+    }
 }
 
 $db = new Common(false);

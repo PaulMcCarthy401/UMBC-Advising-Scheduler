@@ -32,7 +32,7 @@
                     </thead>
                     <tbody>
                     <?php foreach ($appts as $appt): ?>
-                    <form action="./appointments.php" method="POST">
+                    <form action="/student/appointments/confirmAppointment.php" method="POST">
                         <input type="hidden" name="id" value=<?php echo("\"".$appt->id."\"") ?> />
                         <tr>
                         <td> <?php echo($appt->date); ?> </td>
