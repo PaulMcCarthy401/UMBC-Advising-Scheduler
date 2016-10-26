@@ -11,8 +11,22 @@ body {
     padding: 20px;
 }
 
-#advisorlogin {
+.nav {
     float: right;
+}
+
+.nav ul {
+    text-align: right;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.appointments {
+    width: 100%;
+    text-align: right;
 }
 
 h1, h2, h3 {
@@ -47,7 +61,6 @@ input[type="submit"] {
     width: auto;
     height: auto;
 }
-
 
 .invalid {
     padding: 5px;

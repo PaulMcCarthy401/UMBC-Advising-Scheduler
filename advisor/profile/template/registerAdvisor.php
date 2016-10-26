@@ -6,7 +6,14 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1> Advising </h1>
+			<nav class="nav">
+                <ul>
+                    <li>
+                        <a href="/advisor/profile/advisorLogin.php"> Back to login </a>
+                    </li>
+                </ul>
+            </nav>
+			<h1> Register </h1>
 			<div>
 				<form method="post" action="/advisor/profile/registerAdvisor.php">
 					<label for="tbFirstName"> First Name: </label> 

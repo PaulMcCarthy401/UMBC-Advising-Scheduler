@@ -6,7 +6,13 @@
     </head>
     <body>
     <div class="container">
-        <a id="advisorlogin" href="/advisor/profile/advisorLogin.php"> Advisor Login </a>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="/advisor/profile/advisorLogin.php"> Advisor Login </a>
+                </li>
+            </ul>
+        </nav>
         <h1> Advising </h1>
             <div>
                 <?php if (isset($tPageError)): ?>

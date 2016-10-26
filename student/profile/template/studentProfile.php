@@ -6,7 +6,13 @@
     </head>
     <body>
         <div class="container">
-            <a id="advisorlogin" href="/student/appointments/appointments.php"> Back to appointments </a>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="/student/appointments/appointments.php"> Back to appointments </a>
+                    </li>
+                </ul>
+            </nav>
             <h1> Your Profile </h1>
             <div id="appointmentContainer">
                 <p><?php echo($tStudent->firstName)?></p>

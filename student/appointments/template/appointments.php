@@ -6,7 +6,15 @@
     </head>
     <body>
         <div class="container">
-            <a id="advisorlogin" href="/student/profile/studentProfile.php"> Welcome, <?php echo($tStudentName)?> </a>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="/student/profile/studentProfile.php"> Welcome, <?php echo($tStudentName)?></a>
+                        |
+                        <a href="/student/profile/logout.php"> Logout </a>
+                    </li>
+                </ul>
+            </nav>
             
             <h1> Appointments </h1>
             <?php if (isset($tMsg)): ?>
@@ -15,7 +23,7 @@
             </div>
             <?php endif; ?>
             <div id="appointmentContainer">
-                <table>
+                <table class="appointments">
                     <thead>
                         <th> Day </th>
                         <th> Time </th>

@@ -6,7 +6,14 @@
     </head>
     <body>
         <div class="container">
-            <a id="advisorlogin" href="/student/profile/studentLogin.php"> Student Login </a>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="/student/profile/studentLogin.php"> Student Login </a>
+                    </li>
+                </ul>
+            </nav>
+            <h1> Advisor Login </h1>
             <!--Get Password and Name-->
             <form action="/advisor/profile/advisorLogin.php" method='post'>
                 <label for="tfUser"> Username: </label>
