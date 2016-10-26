@@ -10,7 +10,7 @@ $result = $db->executeQuery("SELECT * FROM `Appointment`", "appointments.php");
 $appts = array();
 
 while ($row = mysql_fetch_assoc($result)) {
-    array_push($appts, new Appointment($row["ID"], $row["Date"], $row["StartTime"], $row["Location"], $row["Type"]));
+    array_push($appts, new Appointment($row['ID'], $row['Date'], $row['StartTime'], $row['Location'], $row['Type']));
 }
 
 $tStudentName = $_SESSION['studentFirstName'];

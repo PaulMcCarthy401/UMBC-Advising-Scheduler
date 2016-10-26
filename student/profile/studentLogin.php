@@ -12,11 +12,11 @@ $tPageError = NULL;
 if (!empty($_POST)) {
     // Put all our form input into an array so it's easy to manage
     $form = array(
-        "first_name" => $_POST["first_name"],
-        "last_name" => $_POST["last_name"],
-        "student_id" => $_POST["student_id"],
-        "email" => $_POST["email"],
-        "major" => $_POST["major"]
+        "first_name" => $_POST['first_name'],
+        "last_name" => $_POST['last_name'],
+        "student_id" => $_POST['student_id'],
+        "email" => $_POST['email'],
+        "major" => $_POST['major']
     );
 
     // Escape all form input
@@ -24,11 +24,11 @@ if (!empty($_POST)) {
 
     // Once input is ready, put it into an object
     $student = new Student(
-        $form["first_name"],
-        $form["last_name"],
-        $form["student_id"],
-        $form["email"],
-        $form["major"]
+        $form['first_name'],
+        $form['last_name'],
+        $form['student_id'],
+        $form['email'],
+        $form['major']
     );
     
     // Create a new template array for logging input errors. 

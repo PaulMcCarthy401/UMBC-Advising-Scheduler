@@ -16,7 +16,7 @@ if(!empty($_POST)) {
     $result = $db->executeQuery($query, "appointments.php");
 
     $row = mysql_fetch_assoc($result);
-    $appt = new Appointment($row["ID"], $row["Date"], $row["StartTime"], $row["Location"], $row["Type"]);
+    $appt = new Appointment($row['ID'], $row['Date'], $row['StartTime'], $row['Location'], $row['Type']);
 
     $tAppt = $appt;
 

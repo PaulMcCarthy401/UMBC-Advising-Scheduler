@@ -8,8 +8,8 @@ require(PROJROOT.'/class/Appointment.php');
 if (!empty($_POST)) {
     if (isset($_POST['id'])) {
         // Make the student->appt pair in the db
-        $apptID = $_POST["id"];
-        $studentID = $_SESSION["studentID"];
+        $apptID = $_POST['id'];
+        $studentID = $_SESSION['studentID'];
         $db = new Common(false);
 
         $query = "
