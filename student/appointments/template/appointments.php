@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Advising</title>
-        <link rel="stylesheet" type="text/css" href="/style/main.css" />
+        <link rel="stylesheet" type="text/css" href="../../style/main.css" />
     </head>
     <body>
         <div class="container">
