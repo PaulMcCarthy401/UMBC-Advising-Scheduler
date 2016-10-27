@@ -4,9 +4,8 @@ require_once('../../config/config.php');
 require_once(PROJROOT.'/class/helper/CommonMethods.php');
 require(PROJROOT."/class/Student.php");
 
-if(!isset($_SESSION)){
-    session_start();
-}
+session_start();
+
 
 // Check if the user tried to login
 $tPageError = NULL;
@@ -80,13 +79,9 @@ if (!empty($_POST)) {
         $_SESSION['studentID'] = $id;
         $_SESSION['studentFirstName'] = $student->firstName;
 
-<<<<<<< HEAD
-
         $query = "SELECT * FROM `StudentAppt` WHERE `StudentID`='$id'";
         $result = $db->executeQuery($query, "index.php");
 
-
-        
         // check if we found an appt that matches
         if (mysql_num_rows($result) != 0) {
 	  header("Location: ../../student/appointments/cancelAppointment.php");
@@ -94,9 +89,7 @@ if (!empty($_POST)) {
         else {
 	  header("Location: ../../student/appointments/appointments.php");
 	}
-=======
-        header("Location: ../../student/appointments/appointments.php");
->>>>>>> 21b6fbfb43f59ea1c22db6bd033882f0fd9634d6
+
     } else {
       require(PROJROOT.'/student/appointments/template/studentLogin.php');
     }
