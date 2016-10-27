@@ -22,7 +22,7 @@ if(!empty($_POST)) {
 
     require(PROJROOT.'/student/appointments/template/confirmAppointment.php');
 } else {
-    header('Location: /student/appointments/appointments.php');
+    header('Location: ../../student/appointments/appointments.php');
 }
 
 

@@ -2,21 +2,21 @@
 <html>
     <head>
         <title> Sitemap </title>
-        <link rel="stylesheet" type="text/css" href="/style/main.css">
+        <link rel="stylesheet" type="text/css" href="./style/main.css">
     </head>
     <body>
         <div class="container">
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="/student/profile/studentLogin.php"> Back to student login </a>
+                        <a href="./student/profile/studentLogin.php"> Back to student login </a>
                     </li>
                 </ul>
             </nav>
             <h1> Sitemap </h1>
             <ul>
                 <li>
-                    <a href="/student/profile/studentLogin.php">Student Login</a>
+                    <a href="./student/profile/studentLogin.php">Student Login</a>
                     <ul>
                         <li> Appointment Browser </li>
                         <li> Delete Appointment </li>
@@ -25,13 +25,13 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="/advisor/profile/advisorLogin.php"> Advisor Login </a>
+                    <a href="./advisor/profile/advisorLogin.php"> Advisor Login </a>
                     <ul>
                         <li>Appointment Browser/Manager</li>
                     </ul>
                 </li>
                 <li>
-                    <a href="/advisor/profile/registerAdvisor.php"> Register Advisor </a>
+                    <a href="./advisor/profile/registerAdvisor.php"> Register Advisor </a>
                 </li>
             </ul>
         </div>

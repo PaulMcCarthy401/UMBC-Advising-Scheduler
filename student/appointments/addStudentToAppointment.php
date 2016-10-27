@@ -37,6 +37,6 @@ if (!empty($_POST)) {
         require(PROJROOT.'/student/appointments/template/appointments.php');
     }
 } else {
-    header('Location: /student/appointments/appointments.php');
+    header('Location: ../../student/appointments/appointments.php');
 }
 ?>

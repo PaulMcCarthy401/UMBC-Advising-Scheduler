@@ -29,7 +29,7 @@ if (isset($_POST['tfUser']) && isset($_POST['pwPassword']))
     if ($row['Password'] != NULL && $userPassword == $row['Password']) {
         $_SESSION['UserID'] = $row['ID'];
         $_SESSION['UserMSG'] = "Welcome ".$row['Username']." to your management page!";
-        header('Location: advisorManager.php');
+        header('Location: ../../advisor/profile/advisorManager.php');
     }
 
     // Otherwise, get login again with error message
