@@ -9,9 +9,9 @@
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="/student/profile/studentProfile.php"> Welcome, <?php echo($tStudentName)?></a>
+                        <a href="../../student/profile/studentProfile.php"> Welcome, <?php echo($tStudentName)?></a>
                         |
-                        <a href="/student/profile/logout.php"> Logout </a>
+                        <a href="../../student/profile/logout.php"> Logout </a>
                     </li>
                 </ul>
             </nav>

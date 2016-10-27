@@ -9,7 +9,7 @@
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="/student/profile/logout.php"> Logout </a>
+                        <a href="../../student/profile/logout.php"> Logout </a>
                     </li>
                 </ul>
             </nav>
@@ -34,11 +34,11 @@
             </table>
 
             <div class="confirm">
-                <form action="/student/appointments/addStudentToAppointment.php" method="POST">
+                <form action="../../student/appointments/addStudentToAppointment.php" method="POST">
                     <input type="hidden" value="<?php echo $tAppt->id ?>" name='id'>
                     <input type="submit" value="Confirm">
                 </form>
-                <form action="/student/appointments/appointments.php">
+                <form action="../../student/appointments/appointments.php">
                     <input type="submit" value="Cancel">
                 </form>
             </div>

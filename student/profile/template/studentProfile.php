@@ -9,7 +9,7 @@
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="/student/appointments/appointments.php"> Back to appointments </a>
+                        <a href="../../student/appointments/appointments.php"> Back to appointments </a>
                     </li>
                 </ul>
             </nav>
