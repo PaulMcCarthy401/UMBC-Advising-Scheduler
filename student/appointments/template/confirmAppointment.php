@@ -2,14 +2,14 @@
 <html>
     <head>
         <title>Advising</title>
-        <link rel="stylesheet" type="text/css" href="/style/main.css" />
+        <link rel="stylesheet" type="text/css" href="../../style/main.css" />
     </head>
     <body>
         <div class="container">
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="/student/profile/logout.php"> Logout </a>
+                        <a href="../../student/profile/logout.php"> Logout </a>
                     </li>
                 </ul>
             </nav>
@@ -33,11 +33,11 @@
                 </tbody>
             </table>
 
-            <form action="/student/appointments/addStudentToAppointment.php" method="POST">
+            <form action="../../student/appointments/addStudentToAppointment.php" method="POST">
                 <input type="hidden" value="<?php echo $tAppt->id ?>" name='id'>
                 <input type="submit" value="Confirm">
             </form>
-            <form action="/student/appointments/appointments.php">
+            <form action="../../student/appointments/appointments.php">
                 <input type="submit" value="Cancel">
             </form>
 

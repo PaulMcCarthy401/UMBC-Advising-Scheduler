@@ -4,7 +4,9 @@ require_once('../../config/config.php');
 require_once(PROJROOT.'/class/helper/CommonMethods.php');
 require(PROJROOT."/class/Student.php");
 
-session_start();
+if(!isset($_SESSION)){
+    session_start();
+}
 
 // Check if the user tried to login
 $tPageError = NULL;
@@ -78,13 +80,25 @@ if (!empty($_POST)) {
         $_SESSION['studentID'] = $id;
         $_SESSION['studentFirstName'] = $student->firstName;
 
-        header("Location: ".USERNAME.DIRECTORY."/student/appointments/appointments.php");
+
+        $query = "SELECT * FROM `StudentAppt` WHERE `StudentID`='$id'";
+        $result = $db->executeQuery($query, "index.php");
+
+
+        
+        // check if we found an appt that matches
+        if (mysql_num_rows($result) != 0) {
+	  header("Location: ../../student/appointments/cancelAppointment.php");
+        }
+        else {
+	  header("Location: ../../student/appointments/appointments.php");
+	}
     } else {
-        require('./template/studentLogin.php');
+      require(PROJROOT.'/student/appointments/template/studentLogin.php');
     }
 } else {
-    // Otherwise, render the page
-    require('./template/studentLogin.php');
+  // Otherwise, render the page
+  require(PROJROOT.'/student/appointments/template/studentLogin.php');
 }
 
 

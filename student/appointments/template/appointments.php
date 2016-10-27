@@ -2,16 +2,16 @@
 <html>
     <head>
         <title>Advising</title>
-        <link rel="stylesheet" type="text/css" href="/style/main.css" />
+        <link rel="stylesheet" type="text/css" href="../../style/main.css" />
     </head>
     <body>
         <div class="container">
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="/student/profile/studentProfile.php"> Welcome, <?php echo($tStudentName)?></a>
+                        <a href="../../student/profile/studentProfile.php"> Welcome </a>
                         |
-                        <a href="/student/profile/logout.php"> Logout </a>
+                        <a href="../../student/profile/logout.php"> Logout </a>
                     </li>
                 </ul>
             </nav>
@@ -32,7 +32,7 @@
                     </thead>
                     <tbody>
                     <?php foreach ($appts as $appt): ?>
-                    <form action="/student/appointments/confirmAppointment.php" method="POST">
+                    <form action="../../student/appointments/confirmAppointment.php" method="POST">
                         <input type="hidden" name="id" value=<?php echo("\"".$appt->id."\"") ?> />
                         <tr>
                         <td> <?php echo($appt->date); ?> </td>
