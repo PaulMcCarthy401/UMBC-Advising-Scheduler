@@ -60,5 +60,8 @@
                 </form>
             </div>
         </div>
+        <footer>
+            <a href="../../sitemap.php"> Sitemap </a>
+        </footer>
     </body>
 </html>

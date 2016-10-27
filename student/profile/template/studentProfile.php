@@ -2,14 +2,14 @@
 <html>
     <head>
         <title>Advising</title>
-        <link rel="stylesheet" type="text/css" href="/style/main.css">
+        <link rel="stylesheet" type="text/css" href="../../style/main.css">
     </head>
     <body>
         <div class="container">
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="/student/appointments/appointments.php"> Back to appointments </a>
+                        <a href="../../student/appointments/appointments.php"> Back to appointments </a>
                     </li>
                 </ul>
             </nav>

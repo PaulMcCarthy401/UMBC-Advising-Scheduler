@@ -15,7 +15,7 @@
             </nav>
             
             <h1> Confirm </h1>
-            <p> Are you sure you want to join the meeting? </p>
+            <p> Are you sure you want to cancel this meeting? </p>
             <table class="appointments">
                 <thead>
                     <th> Day </th>
@@ -33,25 +33,15 @@
                 </tbody>
             </table>
 
-<<<<<<< HEAD
-            <form action="../../student/appointments/addStudentToAppointment.php" method="POST">
-                <input type="hidden" value="<?php echo $tAppt->id ?>" name='id'>
-                <input type="submit" value="Confirm">
-            </form>
-            <form action="../../student/appointments/appointments.php">
-                <input type="submit" value="Cancel">
-            </form>
-=======
             <div class="confirm">
-                <form action="../../student/appointments/addStudentToAppointment.php" method="POST">
+                <form action="../../student/appointments/deleteAppointment.php" method="POST">
                     <input type="hidden" value="<?php echo $tAppt->id ?>" name='id'>
-                    <input type="submit" value="Confirm">
+                    <input type="submit" value="Delete">
                 </form>
                 <form action="../../student/appointments/appointments.php">
                     <input type="submit" value="Cancel">
                 </form>
             </div>
->>>>>>> 21b6fbfb43f59ea1c22db6bd033882f0fd9634d6
 
         </div>
     </body>

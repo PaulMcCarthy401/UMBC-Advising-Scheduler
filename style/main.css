@@ -73,3 +73,12 @@ input[type="submit"] {
     background-color: #C8E6C9;
     color: #4CAF50;
 }
+
+.confirm {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.confirm form {
+    display: inline-block;
+}

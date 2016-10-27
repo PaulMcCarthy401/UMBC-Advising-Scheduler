@@ -80,6 +80,7 @@ if (!empty($_POST)) {
         $_SESSION['studentID'] = $id;
         $_SESSION['studentFirstName'] = $student->firstName;
 
+<<<<<<< HEAD
 
         $query = "SELECT * FROM `StudentAppt` WHERE `StudentID`='$id'";
         $result = $db->executeQuery($query, "index.php");
@@ -93,6 +94,9 @@ if (!empty($_POST)) {
         else {
 	  header("Location: ../../student/appointments/appointments.php");
 	}
+=======
+        header("Location: ../../student/appointments/appointments.php");
+>>>>>>> 21b6fbfb43f59ea1c22db6bd033882f0fd9634d6
     } else {
       require(PROJROOT.'/student/appointments/template/studentLogin.php');
     }

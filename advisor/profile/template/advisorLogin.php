@@ -39,9 +39,9 @@
             <!--Get Password and Name-->
             <form action="../../advisor/profile/advisorLogin.php" method='post'>
                 <label for="tfUser"> Username: </label>
-                <input type="text" size="8" maxlength="8" name="tfUser"><br>
+                <input type="text" size="32" maxlength="64" placeholder="username" name="tfUser"><br>
                 <label for="pwPassword"> Password: </label>
-                <input type="password" size="8" maxlength="8" name="pwPassword"><br>
+                <input type="password" size="32" maxlength="64" placeholder="password" name="pwPassword"><br>
 
                 <input type="submit" value="Login">
             </form>

@@ -1,8 +1,8 @@
 CREATE TABLE `Advisor` (
 	`ID` INT NOT NULL AUTO_INCREMENT,
 	`Username` VARCHAR(64) NOT NULL,
-	`Password` Char(255) NOT NULL,
-	`Email` VARCHAR(64) NOT NULL,
+	`Password` CHAR(32) NOT NULL,
+	`Email` VARCHAR(254) NOT NULL,
 	`Salt` CHAR(32) NOT NULL,
 	PRIMARY KEY (`ID`)
 );
